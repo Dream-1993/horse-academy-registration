@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Horse Academy</title>
+  <style>
+    /* Basic resets */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    /* Logo in the top-right corner */
+    .logo {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      max-width: 120px;
+    }
+
+    /* Main content area */
+    .shop-container {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    /* Product Categories */
+    .category-section {
+      padding: 40px 0;
+      background-color: #fff;
+      margin-bottom: 40px;
+    }
+
+    .category-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product-item {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .product-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .product-item img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product-item h3 {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    .product-item p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color: #666;
+    }
+
+    .product-item .price {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .product-item button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-item button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <img src="C:\Users\Bhavana.k\OneDrive\Desktop\dhra\lo.jpg" alt="Horse Academy Logo" class="logo">
+
+  <!-- Header -->
+  <header>
+    <h1>Horse Academy Shop</h1>
+  </header>
+
+  <!-- Main Shop Container -->
+  <div class="shop-container">
+
+    <!-- Horse Equipment Section -->
+    <div class="category-section">
+      <h2>Horse Equipment</h2>
+      <div class="product-grid">
+        <!-- Example Product 1 -->
+        <div class="product-item">
+          <img src="path_to_image/horse_saddle.jpg" alt="Horse Saddle">
+          <h3>Horse Saddle</h3>
+          <p>High-quality leather saddle for all riders.</p>
+          <p class="price">$299.99</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <!-- Example Product 2 -->
+        <div class="product-item">
+          <img src="path_to_image/horse_bridle.jpg" alt="Horse Bridle">
+          <h3>Horse Bridle</h3>
+          <p>Durable bridle suitable for all horse breeds.</p>
+          <p class="price">$120.00</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <!-- Example Product 3 -->
+        <div class="product-item">
+          <img src="path_to_image/horse_helmet.jpg" alt="Riding Helmet">
+          <h3>Riding Helmet</h3>
+          <p>Safety first with our premium riding helmet.</p>
+          <p class="price">$89.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Training Gear Section -->
+    <div class="category-section" style="background-color: #f9f9f9;">
+      <h2>Training Gear</h2>
+      <div class="product-grid">
+        <!-- Example Product 1 -->
+        <div class="product-item">
+          <img src="path_to_image/riding_gloves.jpg" alt="Riding Gloves">
+          <h3>Riding Gloves</h3>
+          <p>Comfortable gloves for better grip during rides.</p>
+          <p class="price">$39.99</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <!-- Example Product 2 -->
+        <div class="product-item">
+          <img src="path_to_image/jumping_pole.jpg" alt="Jumping Pole">
+          <h3>Jumping Pole</h3>
+          <p>Essential equipment for training and competitions.</p>
+          <p class="price">$59.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Academy Merchandise Section -->
+    <div class="category-section">
+      <h2>Academy Merchandise</h2>
+      <div class="product-grid">
+        <!-- Example Product 1 -->
+        <div class="product-item">
+          <img src="path_to_image/academy_shirt.jpg" alt="Academy T-Shirt">
+          <h3>Academy T-Shirt</h3>
+          <p>Show your Horse Academy pride with this shirt.</p>
+          <p class="price">$19.99</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <!-- Example Product 2 -->
+        <div class="product-item">
+          <img src="path_to_image/academy_mug.jpg" alt="Academy Mug">
+          <h3>Academy Mug</h3>
+          <p>Enjoy your coffee in our exclusive mug.</p>
+          <p class="price">$9.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Horse Academy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

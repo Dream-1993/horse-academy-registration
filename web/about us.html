@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Horse Academy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      overflow: hidden;
+      background-color: black; /* Set the body background to black */
+    }
+
+    /* Full-screen slideshow container */
+    .slideshow-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    /* Individual slides */
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      animation: fade 20s infinite;
+    }
+
+    .slide:nth-child(1) {
+      background-image: url('C:\Users\Bhavana.k\OneDrive\Desktop\dream\web\images\boarding.jpg');
+      animation-delay: 0s;
+    }
+
+    .slide:nth-child(2) {
+      background-image: url('C:\Users\Bhavana.k\OneDrive\Desktop\dream\web\images\leasing horses.jpg');
+      animation-delay: 5s;
+    }
+
+    .slide:nth-child(3) {
+      background-image: url('C:\Users\Bhavana.k\OneDrive\Desktop\dream\web\images\advanced.jpg');
+      animation-delay: 10s;
+    }
+
+    .slide:nth-child(4) {
+      background-image: url('C:\Users\Bhavana.k\OneDrive\Desktop\dream\web\images\dreesage.jpg');
+      animation-delay: 15s;
+    }
+
+    /* Fade animation for slideshow */
+    @keyframes fade {
+      0% { opacity: 0; }
+      25% { opacity: 1; }
+      75% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    /* Content container */
+    .about-us-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      padding: 20px;
+      position: relative;
+      background-color: white; /* Set background to white */
+      color: black; /* Set content text color to black */
+    }
+
+    .content {
+      max-width: 60%;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .logo-container {
+      max-width: 30%;
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+  </div>
+
+  <!-- About Us content -->
+  <div class="about-us-container">
+    <div class="content">
+      <h1>About Us</h1>
+      <p>
+        Welcome to Horse Academy! We are passionate about equestrian training, horse care, 
+        and fostering a vibrant community of horse enthusiasts. Our mission is to provide 
+        top-notch education and resources for riders of all levels.
+      </p>
+    </div>
+    <div class="logo-container">
+      <img src="C:/Users/Bhavana.k/OneDrive/Desktop/dream/web/images/lo.jpg" alt="Horse Academy Logo">
+    </div>
+  </div>
+</body>
+</html>

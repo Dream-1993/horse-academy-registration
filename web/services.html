@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Academy Services</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Full-page black background */
+            color: white; /* Text color for visibility */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #02080d;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            max-width: 50px;
+            height: auto;
+        }
+
+        .slideshow-container {
+            position: relative;
+            width: 80%;
+            max-width: 900px;
+            height: 500px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        .slide {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(70%);
+        }
+
+        .slide .text {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 1.8em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .slide .description {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 1em;
+            padding: 15px;
+            width: 80%;
+            text-align: center;
+            border-radius: 5px;
+            line-height: 1.5;
+        }
+
+        /* Fade Animation */
+        .fade {
+            animation: fadeEffect 1.5s ease-in-out;
+        }
+
+        @keyframes fadeEffect {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Navigation Dots */
+        .dots {
+            text-align: center;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+
+        .dots span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .dots span.active {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Services</h1>
+        <img src="C:\Users\Bhavana.k\OneDrive\Desktop\dream\web\images\lo.jpg" alt="Logo" class="logo">
+    </header>
+
+    <div class="slideshow-container">
+        <!-- Slides -->
+        <div class="slide fade">
+            <img src="C:\Users\Bhavana.k\OneDrive\Desktop\dream\web\images\beg.jpg" alt="Beginners">
+            <div class="text">Beginners</div>
+            <div class="description">
+                Perfect for those just starting their equestrian journey. Learn the basics of horse care and riding in a safe and supportive environment.
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="C:\Users\Bhavana.k\OneDrive\Desktop\dream\web\images\intermediate.jpg" alt="Intermediate">
+            <div class="text">Intermediate</div>
+            <div class="description">
+                Build upon your foundational skills with advanced riding techniques, horse handling, and understanding equine behavior.
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="C:\Users\Bhavana.k\OneDrive\Desktop\dream\web\images\advanced.jpg" alt="Advanced">
+            <div class="text">Advanced</div>
+            <div class="description">
+                Tailored for experienced riders aiming to excel in competitive riding and professional equestrian skills.
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="C:\Users\Bhavana.k\OneDrive\Desktop\dream\web\images\showjumping.jpeg" alt="Show Jumping">
+            <div class="text">Show Jumping</div>
+            <div class="description">
+                Master the art of show jumping with training sessions that focus on accuracy, speed, and technique.
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="C:\Users\Bhavana.k\OneDrive\Desktop\dream\web\images\dreesage.jpg" alt="Dressage">
+            <div class="text">Dressage</div>
+            <div class="description">
+                Learn the elegance and discipline of dressage, emphasizing harmony and precision between horse and rider.
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="C:\Users\Bhavana.k\OneDrive\Desktop\dream\web\images\breaking_young_horse_gr.webp" alt="Breaking and Training">
+            <div class="text">Breaking and Training</div>
+            <div class="description">
+                Professional training programs for young or challenging horses, ensuring they develop into reliable companions.
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="C:\Users\Bhavana.k\OneDrive\Desktop\dream\web\images\buying and selling.jpg" alt="Buying and Selling">
+            <div class="text">Buying and Selling</div>
+            <div class="description">
+                Expert guidance in buying or selling horses, matching the right horse with the right rider or owner.
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="C:\Users\Bhavana.k\OneDrive\Desktop\dream\web\images\leasing horses.jpg" alt="Leasing">
+            <div class="text">Horses for Leasing</div>
+            <div class="description">
+                Flexible leasing options for riders looking to experience horse ownership without full-time commitment.
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="C:\Users\Bhavana.k\OneDrive\Desktop\dream\web\images\boarding.jpg" alt="Boarding Facilities">
+            <div class="text">Boarding Facilities</div>
+            <div class="description">
+                Premium boarding facilities offering full-care services, spacious stables, and a nurturing environment for your horse.
+            </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="dots"></div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dotsContainer = document.querySelector('.dots');
+
+        // Create navigation dots
+        slides.forEach((_, index) => {
+            const dot = document.createElement('span');
+            dot.classList.add('dot');
+            dot.dataset.index = index;
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(index) {
+            slides.forEach(slide => (slide.style.display = 'none'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[index].style.display = 'block';
+            dots[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        // Automatic Slideshow
+        setInterval(nextSlide, 3000);
+
+        // Manual navigation with dots
+        dots.forEach(dot =>
+            dot.addEventListener('click', e => {
+                currentIndex = +e.target.dataset.index;
+                showSlide(currentIndex);
+            })
+        );
+
+        // Initialize
+        showSlide(currentIndex);
+    </script>
+</body>
+</html>

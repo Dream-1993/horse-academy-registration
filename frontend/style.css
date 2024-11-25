@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #150d0d;
+    color: #FFD700;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.nav-menu li:first-child {
+    padding-bottom: 20px; /* Adjust as needed */
+}
+
+header .logo{
+    width: 100px;
+    height: auto;
+    margin-right: 1rem;
+    background-color: #190505;
+}
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    max-width: 800px; /* Adjust width as needed */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Each Slide */
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%; /* Full-width images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Add a fade-in effect to the slides */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+/* Contact Info Styling */
+/* Fixed Contact Info Styling */
+.fixed-contact-info {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.6); /* Optional background for better readability */
+    padding: 8px 12px;
+    border-radius: 5px;
+    z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+
+header {
+    position: relative;
+    background-color: rgba(22, 18, 18, 0.8);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.hero {
+    background-color: #555;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.service-item {
+    margin: 1rem;
+    text-align: center;
+}

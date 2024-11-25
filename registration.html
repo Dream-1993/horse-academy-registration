@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Academy Registration Form</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+    <form action="/submit_registration" method="post" enctype="multipart/form-data">
+        <div class="logo-container">
+            <img src="C:\Users\Bhavana.k\OneDrive\Desktop\dhra\lo.jpg" alt="Horse Academy Logo" class="logo"> <!-- Updated image path -->
+        </div>
+        <h1>Horse Academy Registration Form</h1>
+
+        <!-- Personal Details Section -->
+        <div class="form-section">
+            <h2>Personal Details</h2>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address"  required>
+
+            <label for="emergency-contact">Emergency Contact</label>
+            <input type="text" id="emergency-contact" name="emergency_contact"  required>
+        </div>
+
+    
+        <!-- Declaration Section -->
+        <div class="form-section">
+            <h2>Declaration</h2>
+            <p class="declaration">
+                I hereby declare that the information provided is accurate and complete. I agree to abide by the Horse Academy's terms and conditions. I understand that horseback riding is a potentially hazardous activity and that I participate at my own risk.
+            </p>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-section signature-section">
+            <div class="signature-block">
+                <label for="client-signature" style="display: block; margin-bottom: 5px;">Client's Signature:</label>
+                <div class="signature-line"></div>
+            </div>
+        
+            <div class="signature-block">
+                <label for="manager-signature" style="display: block; margin-bottom: 5px;">Manager's Signature:</label>
+                <div class="signature-line"></div>
+            </div>
+        </div>
+        
+        
+
+        <!-- Social Links Section -->
+        <div class="social-links">
+            <h2>Connect with Us</h2>
+            <a href="https://wa.me/6360594585" target="_blank" title="WhatsApp">
+                6360594585
+            </a>
+            <a href="mailto:dreamhorseridingacademy@gmail.com" title="Email Us">
+                dreamhorseridingacademy@gmail.com
+            </a>
+        </div>
+    </form>
+
+</body>
+</html>
